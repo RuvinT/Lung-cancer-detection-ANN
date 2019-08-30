@@ -66,3 +66,5 @@ print(patients)
 # Show some slice in the middle
 plt.imshow(first_patient_pixels[1], cmap=plt.cm.gray)
 plt.show()
+
+print(patient)
