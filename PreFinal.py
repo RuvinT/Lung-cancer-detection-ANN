@@ -153,11 +153,7 @@ first_patient_pixels = get_pixels_hu(first_patient)
 plt.hist(first_patient_pixels.flatten(), bins=80, color='c')
 plt.xlabel("Hounsfield Units (HU)")
 plt.ylabel("Frequency")
-plt.show()
-print(patients)
-# Show some slice in the middle
-plt.imshow(first_patient_pixels[1], cmap=plt.cm.gray)
-plt.show()
+
 
 pix_resampled, spacing = resample(first_patient_pixels, first_patient, [1,1,1])
 #print("Shape before resampling\t", first_patient_pixels.shape)
